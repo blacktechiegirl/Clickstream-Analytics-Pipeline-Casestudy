@@ -13,8 +13,9 @@ The data source layer receives data from various sources via the API gateway end
 In the data ingestion layer data is captured and stored by the Data streams in real-time. The kinesis data streams capture and process data from various sources.
 ### Data Processing Layer
 In the data processing layer, data is processed and analyzed using kinesis data analytics. Kinesis data analytics trigger lambda functions based on predefined metrics.
+### Data Reaction Layer
+In the data reaction layer, Lambda function is used to react to events.
 ### Data Persistence Layer
 In the data persistence layer,  Kinesis Firehose is used to persist data into storage channels. kinesis Firehose is a streaming service that is used when you want to load your data into storage channels like S3, Redshift, Elastic Search e.t.c In this architecture data is loaded into kinesis firehose to be distributed into s3 Bucket in near real-time.
-
-### Data Reaction Layer
 ### Data Visualization Layer
+In the data visualization layer, Amazon Athena is used to fetch data from s3 buckets to perform SQL queries on it. Amazon QuickSight is a visualization tool that is natively used to build dashboards over Amazon Athena data.
