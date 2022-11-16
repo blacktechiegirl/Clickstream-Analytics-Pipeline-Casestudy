@@ -7,8 +7,8 @@ You can detect user behavior in a website or application by analyzing the sequen
 ![alt text](https://github.com/blacktechiegirl/Clickstream-Analytics-Pipeline-Casestudy/blob/main/Cloud%20Architecture%20(1).png)
 
 # The-Clickstream-Analytics-Data-Flow
-### API Gateway
-Data is sent from all the various sources via the api gateway endpoint.
+### Data Source Layer
+The data source layer receives data from various sources via the API gateway endpoint.
 ### Kinesis Data Streams
 Data is captured and strored by the Data streams in real time.
 ### Kinesis Data Analytics
