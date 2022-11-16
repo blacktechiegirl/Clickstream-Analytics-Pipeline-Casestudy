@@ -8,13 +8,13 @@ You can detect user behavior in a website or application by analyzing the sequen
 
 # The-Clickstream-Analytics-Data-Flow
 ### API Gateway
-Data is sent from the source via the api gatewy endpoint.
+Data is sent from all the various sources via the api gateway endpoint.
 ### Kinesis Data Streams
-Data is captured and strored by the Data streams in real time
+Data is captured and strored by the Data streams in real time.
 ### Kinesis Data Analytics
-Data is process and analyzed with kinesis data analytics
+Data is processed and analyzed with kinesis data analytics. Kinesis data analytics trigger lambda functions based on preefined metrics.
 ### Kinesis Data Firehose
-Data is loaded into kinesis fiehose to be distributed into storage channels in near real time
+This is the persistence layer. Kinesis Firehose is a streaming service that is used when you want to load your data into storage channels like S3, Redshift, Elastic Search e.t.c In this architecture data is loaded into kinesis firehose to be distributed into s3 Bucket in near real time.
 ### S3 Bucket
 Data is stored in an S3 bucket for further queries with Athena
 ### CloudWatch Alarms
