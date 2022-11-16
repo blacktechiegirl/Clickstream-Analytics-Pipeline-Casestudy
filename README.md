@@ -5,3 +5,12 @@ You can detect user behavior in a website or application by analyzing the sequen
 
 # The-Clickstream-Analytics-Pipeline-Architecture
 ![alt text](https://github.com/blacktechiegirl/Clickstream-Analytics-Pipeline-Casestudy/blob/main/Cloud%20Architecture.png)
+
+# The-Clickstream-Analytics-Data-Flow
+##API Gateway
+##Kinesis Data Streams
+##Kinesis Data Analytics
+##Kinesis Data Firehose
+##S3 Bucket
+##CloudWatch Alarms
+##Lambda Function
